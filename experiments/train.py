@@ -202,4 +202,4 @@ def train(arglist):
 
 if __name__ == '__main__':
     arglist = arse_args()
-    train(arglst)
+    train(arglist)
