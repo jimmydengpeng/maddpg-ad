@@ -44,8 +44,12 @@ python train.py --scenario simple_tag --exp-name='simple_tag_exp_4' --save-dir='
 python train.py --scenario simple_tag --save-dir='./save-dir/' --display
 
 # * >>>seems like cannot train and then display simultaneously in one command <<<
-python train.py --scenario simple_adversary --exp-name='simple_adversary_exp_1' --save-dir='./save-dir/' --num-episodes=5000
+python train.py --scenario simple_adversary --exp-name='simple_adversary_exp_1' --save-dir='./save-dir/' 
+--num-episodes=5000
+
 
 python train.py --scenario simple_adversary --save-dir='./save-dir/' --display
 
+#* simple_push.py
+python train.py --scenario simple_push --exp-name='simple_push_exp_1' --save-dir='./save-dir/' 
 # TODO:

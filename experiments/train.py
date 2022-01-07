@@ -201,5 +201,5 @@ def train(arglist):
                 break
 
 if __name__ == '__main__':
-    arglist = arse_args()
+    arglist = parse_args()
     train(arglist)
