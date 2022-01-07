@@ -1,0 +1,1 @@
+在服务器1207测试，1080Ti,GPU训练，train.py simple 训练60000 episodes  1500000 steps : 13.5 minutes
