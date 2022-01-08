@@ -2,6 +2,8 @@
 
 # Multi-Agent Deep Deterministic Policy Gradient (MADDPG)
 
+This a pull repo from [Multi-Agent Deep Deterministic Policy Gradient (MADDPG)](https://github.com/openai/maddpg), and is mainly for modification in application of autonomous driving.
+
 This is the code for implementing the MADDPG algorithm presented in the paper:
 [Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments](https://arxiv.org/pdf/1706.02275.pdf).
 It is configured to be run in conjunction with environments from the
