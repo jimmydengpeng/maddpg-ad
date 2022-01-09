@@ -1,0 +1,62 @@
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# > full list of all envs provide by MPE <
+# <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+simple.py
+simple_adversary.py
+simple_crypto.py
+simple_push.py
+simple_reference.py
+simple_speaker_listener.py
+simple_spread.py
+simple_tag.py
+simple_world_comm.py
+
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# > list of useful options after the commdands <
+# <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+--scenario='simple_tag'
+--num-episodes=5000 
+--num-adversaries=5
+
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# > list of training commands <
+# <<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+## after taining the policy will be saved in the './learning_curves/' & save-dir
+
+#> simple
+# train
+python train.py --scenario='simple' --exp-name='simple_exp_1' --save-dir='./save-dir/' --num-episodes=3000
+# display
+python train.py --scenario='simple' --save-dir='./save-dir/' --display
+
+#> simple_tag
+# train
+python train.py --scenario='simple_tag' --exp-name='simple_tag_exp_1' --save-dir='./save-dir/' --num-episodes=3000
+# display
+python train.py --scenario='simple_tag' --save-dir='./save-dir/' --display
+
+#> simple_crypto.py
+# train
+python train.py --scenario='simple_crypto' --exp-name='simple_crypto_exp_1' --save-dir='./save-dir/' --num-episodes=3000
+# display
+python train.py --scenario='simple_crypto' --save-dir='./save-dir/' --display 
+
+#> simple_push.py
+python train.py --scenario='simple_push' --exp-name='simple_push_exp_1' --save-dir='./save-dir/'
+
+
+# >>>>>>>>>>>>>>>
+# > for display <
+# <<<<<<<<<<<<<<<
+
+# >>> the simplest way to display <<<
+python train.py --scenario='simple' --save-dir='./save-dir/' --display 
+
+#! >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#! > seems like cannot train and then display simultaneously in one command <
+#! <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+#// python train.py --scenario='simple' --exp-name='simple_exp_1' --save-dir='./save-dir/' ---display
+#> This will be unable to luanch training or display (if there is NO trained policy)
+#> OR will directly show display (if there IS a corresponding trained policy)
